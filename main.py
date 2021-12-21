@@ -167,7 +167,7 @@ def main():
             data_index += 1
             print(" - Configs")
 
-        print(f"{i}. {option.name} {data_index if iterating_data else None}")
+        print(f"{i}. {option.name} {str(data_index) if iterating_data else ''}")
 
         i += 1
 
