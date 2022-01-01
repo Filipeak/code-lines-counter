@@ -1,6 +1,4 @@
-# code-lines-counter
-
-Simple script to count lines of your project
+# Code Lines Counter
 
 To use, just execute it in a terminal / command prompt:
 ```
