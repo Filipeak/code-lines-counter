@@ -42,8 +42,11 @@ def get_files(dir_name, extensions):
 
 
 def get_lines_count_in_file(file_path):
-    with open(file_path, "r") as file:
-        return len(file.readlines())
+    try:
+        with open(file_path, "r") as file:
+            return len(file.readlines())
+    except UnicodeDecodeError as error:
+        return 0
 
 
 def count_all_lines(dir_name, extensions):
